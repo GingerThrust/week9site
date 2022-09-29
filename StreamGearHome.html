@@ -1,0 +1,112 @@
+<!--Ok so here I want to make a website that simulates an online store for streamers. We will try to use tables to outline prices.
+Also, I can use a form to do a sign up for newsletter and deals aspect on the front. 
+The second page will be the columns to show the products. Now, I can't do an add to cart but I may be able to simulate it.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamGear</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: purple;
+        }
+        a {
+            color: pink;
+        }
+        a:hover {
+            color:red;
+        }
+        div {
+            border-style: solid;
+            border-color: purple;
+            background-color: teal;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: teal;
+        }
+        p {
+            font-size: 18px;
+            font-style: oblique;
+        }
+        img {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <nav class="navbar navbar-expand-lrg navbar-dark bg-dark">
+        <a class="navbar-brand" href="StreamGearHome.html">StreamGear</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class=navbar-nav">
+             <li class="nav-item active">
+                <a class="nav-link" href="StreamGearHome.html">Home</a>
+             </li>
+             <li class="nav-item">
+                <a a class="nav-link" href="StreamGearShop.html">Gear Items</a>
+             </li>
+           </ul>
+            
+        </div>
+    </nav>
+
+    <h1>Welcome to the StreamGear Store!!</h1>
+
+    <div class="container">
+        <div class="row">
+            <p>Welcome to our site! Here at StreamGear, we strive to provide everything a content creator needs, from someone just starting out to a tenured streamer.<br>
+            Our mission is to make everyone welcome and to fasicilitate the dreams and demands of all content creators.</p>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h3>Gear StoreFront</h3>
+                <img src="https://s.yimg.com/uu/api/res/1.2/XNiT8OTnYDhEC.0PtJx7Kw--~B/aD0xMzAwO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-11/b889f670-3e39-11ec-bf7f-75af1c762cdd.cf.jpg" style="width:300px;height:200px">
+                <br>At StreamGear, we keep an eye out on for all the latest accessories and gear for streamers. However, we are not bound to any one compnay for items. We offer a wide variety of gear for creators with ANY budget.<br><br>
+                <button class="btn btn-primary" type="button">Shop Now</button>
+            </div>
+            <div class="col-sm">
+                <h3>Mentoring and Classes</h3>
+                <img src="https://toptwitchstreamers.com/wp-content/uploads/2019/11/Streaming-Software-for-Twitch__800x480-1.jpg" style="width:300px;height:200px">
+                <br>What is Twitch? Which broadcasting software do I use? We answer all these questions with personalized 1-on-1 mentoring. All our instructors are proven content creators with many accolades. Book a session with us today!<br><br>
+                <button class="btn btn-primary" type="button">Book a Session</button>
+            </div>
+            <div class="col-sm">
+                <h3>Custom PC Builds</h3>
+                <img src="https://cdn.thepcenthusiast.com/wp-content/uploads/2022/04/building-a-PC-for-Streaming-01.jpg" style="width:300px;height:200px">
+                <br>We get it; you want to have a good PC but aren't interested in knowing how all the moving parts work. Don't worry, we got you. Just give us a budget and answer a few questions about prefernces and what you'll use the PC for, and we can create an extensive list based off recommendations and want you want.<br><br>
+                <button class="btn btn-primary" type="button">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Join Our Email List for Weekly Deals and Tips!!</h2>
+        <form>
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="text" name="email" placeholder="Email Address">
+            <input type="submit" value="Sign Up">
+
+        </form>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

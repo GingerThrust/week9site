@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamGear</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: purple;
+        }
+        a {
+            color: pink;
+        }
+        a:hover {
+            color:red;
+        }
+        div {
+            border-style: solid;
+            border-color: purple;
+            background-color: teal;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: teal;
+        }
+        p {
+            font-size: 18px;
+            font-style: oblique;
+        }
+        img {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <nav class="navbar navbar-expand-lrg navbar-dark bg-dark">
+        <a class="navbar-brand" href="StreamGearHome.html">StreamGear</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class=navbar-nav">
+             <li class="nav-item active">
+                <a class="nav-link" href="StreamGearHome.html">Home</a>
+             </li>
+             <li class="nav-item">
+                <a a class="nav-link" href="StreamGearShop.html">Gear Items</a>
+             </li>
+           </ul>
+            
+        </div>
+    </nav>
+
+    <h1>Our Gear</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://m.media-amazon.com/images/I/41+FPowY4vL.jpg" style="width:250px;height:200px">
+                <br>Elgato Key Light <span class="badge badge-pill badge-info">In Stock</span><br>
+                $199.99<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="data:image/png;base64,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" style="width:200px;height:200px">
+                <br>Elgato Key Light Air <span class="badge badge-pill badge-info">In Stock</span><br>
+                $129.99<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="https://www.corsair.com/us/en/medias/sys_master/images/images/h07/h8f/9587256229918/10LAC9901/Gallery/10LAC9901_01/-10LAC9901-Gallery-10LAC9901-01.png_515Wx515H" style="width:250px;height:200px">
+                <br>Elgato Ring Light <span class="badge badge-pill badge-info">In Stock</span><br>
+                $199.99<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470492_sd.jpg" style="width:300px;height:200px">
+                <br>Elgato Stream Deck <span class="badge badge-pill badge-info">In Stock</span><br>
+                $110.00<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="https://m.media-amazon.com/images/I/61mr4aEwBiL.jpg" style="width:200px;height:200px">
+                <br>Elgato Facecam <span class="badge badge-pill badge-info">In Stock</span><br>
+                $169.99<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="https://m.media-amazon.com/images/I/41DyRFZY7QL._AC_.jpg" style="width:200px;height:200px">
+                <br>Shure SM7B Microphone <span class="badge badge-pill badge-info">In Stock</span><br>
+                $399.99<br>
+                <button class="btn btn-primary" type="button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
